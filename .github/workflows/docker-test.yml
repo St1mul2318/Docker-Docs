@@ -225,4 +225,5 @@ jobs:
             done
             NEW_ARR+=(${{ matrix.compose_file }})
             export config=${NEW_ARR[@]}
+            chmod +x tests/test.sh
             ./tests/test.sh
